@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@200&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.container{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.content{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color:whitesmoke;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  
+}
+.heading{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+}
+.left-col{
+  margin-left: 6%;
+}
+.left-col h1{
+  font-size: 90px;
+  color: black;
+  font-family: 'Bebas Neue', cursive;
+  line-height: 110px;
+  float: left;
+}
+
+
+
+
+.card:hover{
+  transform: scale(1.2);
+  box-shadow: 5px 5px 15px black;
+}
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+  background-image: url();
+}
+nav{
+   background: transparent;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+   backdrop-filter:blur(5px);
+  height: 80px;
+  width: 100%;
+  opacity: 0.9;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url('transparent') no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+i{
+  margin-top: 25px;
+}
+.name{
+  font-size: 20px;
+}
+.credit{
+  font-size: 50px;
+}
+body{
+  animation-name: test;
+  animation-duration: 300s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+ background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+@keyframes test {
+  0% {
+    background-image: url("https://source.unsplash.com/1920x1080/?pink,"),url("https://source.unsplash.com/1920x1080/?pink2,");
+    background-repeat:no-repeat;
+    background-size: cover;
+
+  }
+  25% {
+    background-image: url("https://source.unsplash.com/1920x1080/?pink2,") , url("https://source.unsplash.com/1920x1080/?pink,");
+    background-repeat:no-repeat;
+    background-size: cover;
+    ;
+  }
+  50% {
+    background-image: url("https://source.unsplash.com/1920x1080/?pink,") , url("https://source.unsplash.com/1920x1080/?pink2,");
+    background-repeat:no-repeat;
+    background-size: cover;
+    ;
+  }
+  75% {
+    background-image: url("https://source.unsplash.com/1920x1080/?pink2,") , url("https://source.unsplash.com/1920x1080/?pink,");
+    background-repeat:no-repeat;
+    background-size: cover;
+    ;
+  }
+  100% {
+    background-image: url("https://source.unsplash.com/1920x1080/?pink,") ;
+    background-repeat:no-repeat;
+    background-size: cover;
+    ;
+  }
+  
+}
+/* .card1{
+  padding: 20px;
+  flex: 25%;
+}
+.card2{
+  padding: 20px;
+  flex: 25%;
+}
+.card3{
+  padding: 20px;
+  flex: 25%;
+}
+.card4{
+  padding: 20px;
+  flex: 25%;
+}
+@media (max-width: 800px) {
+  .card1 , .card2 {
+    flex: 50%;
+  }
+}
+@media (max-width: 800px) {
+  .card3 , .card4 {
+    flex: 50%;
+  }
+} */
