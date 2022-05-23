@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head><link rel="stylesheet" type="text/css" href="genre.css">
+    <title></title>
+	<meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="genre.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <nav style="position: relative;z-index: 9;text-shadow: #1c354c 1px 0 5px; ">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"><img src="logos/wavlogofinal.svg" style="height: 100%;"></label>
+      <ul>
+        <li><a class="hr" class="active" href="mainhtml.html">Home</a></li>
+        <li><a class="hr" href="about.html">Contact</a></li>
+        <li><a class="hr" href="feedback.html">Feedback</a></li>
+        <li><a class="hr" href="newpage.html">LogOut</a></li>
+      </ul>
+    </nav>
+</head>
+<body><!-- Control buttons -->
+	<p style=" font-size: 4vh; font-family: 'Roboto', sans-serif; font-weight: bolder; position: relative; width: 60vw;margin: auto;">Genres</p>
+<div id="myBtnContainer" style="margin:2px;width: 60vw;margin: auto;">
+  <button name="button" style="margin:2px;margin-bottom: 3px;background-color: #f50;" class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button name="button" style="margin:2px;background-color: #f50;" class="btn" onclick="filterSelection('Rock')"> Rock</button>
+  <button name="button" style="margin:2px;background-color: #f50;" class="btn" onclick="filterSelection('Indie')"> Indie</button>
+  <button name="button" style="margin:2px;background-color: #f50;" class="btn" onclick="filterSelection('Metal')"> Metal</button>
+  <button name="button" style="margin:2px;background-color: #f50;" class="btn" onclick="filterSelection('colors')"> Trap</button>
+</div>
+
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+<div class="container">
+  <div class="filterDiv Rock">
+  <img src="trending_songs/taba/taba.jpg" style="float: left;">
+		<p style=" float: left;font-size: 2vh;">Aao Chalein<br><a style="color: black" href="tabartist.html">Taba</a></p>
+
+<img src="logos/play.png" style="height: 4vh;width: 4vh;margin:25px;float: right;" onclick="playsong(0)">		
+	</div>
+  <div class="filterDiv colors Metal">
+  	<img src="trending_songs/taba/taba.jpg" style="float:left;">
+		<p style=" float: left;font-size: 2vh;margin-left: 2px;">Meri Dastaan<br><a style="color: black" href="tabartist.html">Taba</a></p>
+
+<img src="logos/play.png" style="height: 4vh;width: 4vh;margin:25px;float: right;" onclick="playsong(1)">		
+  </div>
+  <div class="filterDiv Rock">
+  <img src="trending_songs/taba/taba.jpg" style="float:left;">
+		<p style="float: left; font-size: 2vh ;margin-left: 2px;;">walk<br><a style="color: black" href="tabartist.html">Taba</a></p>
+
+<img src="logos/play.png" style="height: 4vh;width: 4vh;margin:25px;float: right;" onclick="playsong(2)">		
+	</div>
+  <div class="filterDiv colors">
+  <img src="trending_songs/ritviz/ritviz.jpg" style="float:left;">
+		<p style="float: left; font-size: 2vh ;margin-left: 2px;;">Barso<br><a href="ritvizartist.html" style="color: black;">ritviz</a></p>
+		<img src="logos/play.png" style="height: 4vh;width: 4vh;margin:25px;float: right;" onclick="playsong(3)">
+	</div>
+  <div class="filterDiv Rock Indie">
+  <img src="trending_songs/ritviz/ritviz.jpg" style="float:left;">
+		<p style="float: left; font-size: 2vh ;margin-left: 2px;;">Sickflip<br><a href="ritvizartist.html" style="color: black;">ritviz</a></p>
+		<img src="logos/play.png" style="height: 4vh;width: 4vh;margin:25px;float: right;" onclick="playsong(4)">
+	</div>
+  <div class="filterDiv colors">
+  <img src="trending_songs/ritviz/ritviz.jpg" style="float:left;">
+		<p style="float: left; font-size: 2vh ;margin-left: 2px;;">jeet<br><a href="ritvizartist.html" style="color: black;">ritviz</a></p>
+		<img src="logos/play.png" style="height: 4vh;width: 4vh;margin:25px;float: right;" onclick="playsong(5)">
+	</div>
+  <div class="filterDiv Indie">
+  <img src="trending_songs/porcupine/porcupine.jpg" style="float:left;">
+		<p style="float: left; font-size: 2vh ;margin-left: 2px;;">Blackest Eyes<br><a href="porcupineartist.html" style="color: black;">porcupine</a></p>
+		<img src="logos/play.png" style="height: 4vh;width: 4vh;margin:25px;float: right;" onclick="playsong(6)">
+	</div>
+  <div class="filterDiv Indie">
+  <img src="trending_songs/porcupine/porcupine.jpg" style="float:left;">
+		<p style="float: left; font-size: 2vh ;margin-left: 2px;;">Sound<br><a href="porcupineartist.html" style="color: black;">porcupine</a></p>
+		<img src="logos/play.png" style="height: 4vh;width: 4vh;margin:25px;float: right;" onclick="playsong(7)">
+	</div>
+  <div class="filterDiv Metal">
+  <img src="trending_songs/john/john.jpg" style="float:left;">
+		<p style="float: left; font-size: 2vh ;margin-left: 2px;;">Gravity<br><a href="johnartist.html" style="color: black;">John Mayer</a></p>
+		<img src="logos/play.png" style="height: 4vh;width: 4vh;margin:25px;float: right;" onclick="playsong(8)">
+	</div>
+  <div class="filterDiv Metal Indie">
+  <img src="trending_songs/john/john.jpg" style="float:left;">
+		<p style="float: left; font-size: 2vh ;margin-left: 2px;;">Stop This Train<br><a href="johnartist.html" style="color: black;">John Mayer</a></p>
+		<img src="logos/play.png" style="height: 4vh;width: 4vh;margin:25px;float: right;" onclick="playsong(9)">
+	</div>
+  <div class="filterDiv Metal">
+  <img src="trending_songs/john/john.jpg" style="float:left;">
+		<p style="float: left; font-size: 2vh ;margin-left: 2px;;">Neon<br><a href="johnartist.html" style="color: black;">John Mayer</a></p>
+		<img src="logos/play.png" style="height: 4vh;width: 4vh;margin:25px;float: right;" onclick="playsong(10)">
+	</div>
+  <div class="filterDiv Metal">
+  <img src="trending_songs/blackstrapblues/black.jpg" style="float:left;">
+		<p style="float: left; font-size: 2vh ;margin-left: 2px;;">Tiny Bit Of Sky<br><a href="blackstrapluesartist.html" style="color: black;">BlackStrapBlues</a></p>
+		<img src="logos/play.png" style="height: 4vh;width: 4vh;margin:25px;float: right;" onclick="playsong(11)">
+	</div>
+  <div class="filterDiv Indie">
+  <img src="trending_songs/blackstrapblues/black.jpg" style="float:left;">
+		<p style="float: left; font-size: 2vh ;margin-left: 2px;;">Anuva's Sky<br><a href="blackstrapluesartist.html" style="color: black;">BlackStrapBlues</a></p>
+		<img src="logos/play.png" style="height: 4vh;width: 4vh;margin:25px;float: right;" onclick="playsong(12)">
+
+	</div>
+</div>
+<div style="position: fixed; width: 100%; bottom: 0px;border: 0.1px solid #black;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); z-index: 4;background-color: #fff;opacity: 0.9; backdrop-filter:blur(5px)"><div class="middle" style="width: 60vw;margin: auto;" >
+  	       <button onclick="previous_song()" id="pre"style="background-color: transparent;border: none; margin-left: 25vw;"><img src="logos/forward.png" style="transform: scaleX(-1);height: 4vh;"></button>
+      	   <button onclick="justplay()" id="play"style="background-color: transparent;border: none;margin-left: 3vw;"><img src="logos/play.png" style="height: 4vh;"></button>
+  	       <button onclick="next_song()" id="next"style="background-color: transparent;border: none;margin-left:3vw;" ><img src="logos/forward.png" style="height: 4vh;"></button>
+  	   </div>
+
+       <!--- song duration part --->
+        <div class="duration" style="width: 60vw;margin: auto;">
+           <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()" style="width: 100%;margin-left: 5vw;">
+        </div>
+           
+  	</div>
+
+  </body><script type="text/javascript">
+  	filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+	let previous = document.querySelector('#pre');
+let play = document.querySelector('#play');
+let next = document.querySelector('#next');
+let title = document.querySelector('#title');
+let recent_volume= document.querySelector('#volume');
+let volume_show = document.querySelector('#volume_show');
+let slider = document.querySelector('#duration_slider');
+let show_duration = document.querySelector('#show_duration');
+let track_image = document.querySelector('#track_image');
+let auto_play = document.querySelector('#auto');
+let present = document.querySelector('#present');
+let total = document.querySelector('#total');
+let artist = document.querySelector('#artist');
+let timer;
+
+	var i=0;
+	var index=200;
+	let track = document.createElement('audio');
+
+	let All_song = [
+   {
+     path: "trending_songs/taba/Aao Chalein.mp3",
+   },
+   {
+     path: "trending_songs/taba/Meri Dastaan.mp3",
+   },
+   {
+     path: "trending_songs/taba/walk.mp3",
+   },
+   {
+     path: "trending_songs/ritviz/Barso.mp3",
+   },
+   {
+     path: "trending_songs/ritviz/Sickflip.mp3",
+   },
+   {
+     path: "trending_songs/ritviz/jeet.mp3",
+   }
+   ,
+   {
+     path: "trending_songs/porcupine/Blackest eyes.mp3",
+   },
+   {
+     path: "trending_songs/porcupine/Sound.mp3",
+   },
+   {
+     path: "trending_songs/john/Gravity.mp3",
+   },
+   {
+     path: "trending_songs/john/Stop This Train.mp3",
+   },
+   {
+     path: "trending_songs/john/Neon.mp3",
+   },
+   {
+     path: "trending_songs/blackstrapblues/Tiny Bit Of Sky.mp3",
+   },
+   {
+     path: "trending_songs/blackstrapblues/Anuva's Sky.mp3",
+   }
+];
+function playsong(b){
+  if(index!=b){
+	window.index=b;
+	track.src = All_song[b].path;
+    track.play();
+	play.innerHTML = '<img src="logos/pause.png" style="height: 4vh;">';
+	timer = setInterval(range_slider ,1000);
+	}
+}
+function justplay(){
+	i++;
+	if(i%2!=0){
+
+	play.innerHTML = '<img src="logos/play.png" style="height: 4vh;">';
+	track.pause();}
+	else{
+		play.innerHTML = '<img src="logos/pause.png" style="height: 4vh;">'
+		track.play();
+	}}
+	function change_duration(){
+	slider_position = track.duration * (slider.value / 100);
+	track.currentTime = slider_position;
+}
+function next_song(){
+  if(index<3){
+  index++;
+  track.src = All_song[index].path;
+  play.innerHTML = '<img src="logos/pause.png" style="height: 4vh;">';
+    track.play();}
+}
+function previous_song(){
+  if(index>0){
+  index--;
+  track.src = All_song[index].path;
+  play.innerHTML = '<img src="logos/pause.png" style="height: 4vh;">';
+    track.play();}
+}
+
+
+function range_slider(){
+	let position = 0;
+        
+        // update slider position
+		if(!isNaN(track.duration)){
+		   position = track.currentTime * (100 / track.duration);
+		   slider.value =  position;
+	      }}
+
+
+  </script>
+</html>
