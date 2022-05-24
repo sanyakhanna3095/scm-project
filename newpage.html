@@ -1,0 +1,172 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <title>Responsive Navbar | CodingNepal</title> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newcss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style type="text/css">
+    	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    </style>
+  </head>
+  <body><div style="position: relative; z-index: 9;" >
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">
+      	<img src="logos/wavlogofinal.svg" style="height: 100%; padding-left: 10px;padding-top: 30px;"></label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="about2.html">Contact</a></li>
+        <li><a href="login page.html">Login/SignIn</a></li>
+      </ul>
+    </nav></div>
+    <div>
+
+    <div style="position: relative; height: 0.5%; width: 60%; margin: auto; background-color: #f50"></div>
+    <section class="writing_section" style=" overflow-wrap: break-word;"> <br>
+    	<a href=" login page.html">
+    	<button type="button" class="btn btn-info"  class="buttons">Sign in</button> </a>
+    	<a href="login page.html">
+    	<button type="button" class="btn btn-info"  class="buttons">Create account</button></a>
+    	<a href="for Creators.html">
+        <button type="button" class="btn btn-info" class="buttons" >For Creators</button></a>
+        <br>
+        <a href="login page.html">
+        <button type="button" id="signup" style="font-family: 'Roboto', sans-serif;font-weight: bold; font-size: 1.5vh;">Sign Up</button></a>
+    	<h1 style="z-index: -1; text-align: center;color: #eaeae8;text-shadow: #1c354c 1px 0 5px; font-size: 200%;font-family: 'Roboto', sans-serif;"><br>Connect on WAV</h1>
+    	<h3  style="z-index: -1; text-align: center;color: #eaeae8;text-shadow: #1c354c 1px 0 5px;font-family: 'Roboto', sans-serif;font-size:150%;"><br>Discover, stream, and share a constantly expanding mix of music from emerging and major artists around the world.</h3>
+    </section></div>
+    <section id="middle">
+    	<input type="input" id="search" name="" style="position: relative; z-index: 1" placeholder="Search for artists , tracks  or bands">
+    	<img src="logos/search.png" id="searchicon" > 
+    	<a href="for Creators.html">
+    	<button type="button" class="btn btn-info" style="font-size: 1.5vh; background-color: #F50;border-color: #f50; float: right; margin-top: 25px;">upload your own</button></a>
+    </section>
+    <section id="trending" style="margin-top: 40px;position: relative;">
+    	<div id="poprelease">
+		<div class="songsdiv">
+			<img src="songs/song1.jpg">
+			<img src="logos/play.png" class="logoplay" style=" height: 3vh;width: 3vh;display: ;float: right;margin-bottom: -20vh;"onclick="change(0,'mp3/tricky.mp3')">
+			<section class="song_name"> Tricky Situation</section>
+			<a href="login page.html"><section class="artist_name">HXGO</section></a>
+			<audio controls style="height: 0%;" class="a_dio"><source src="mp3/tricky.mp3" type="audio/mp3"></audio>
+			<section class="bottom_line"></section>
+		</div>
+		<div class="songsdiv">
+			<img src="songs/song2.jpg">
+			<img src="logos/play.png" class="logoplay" style=" height: 3vh;  width: 3vh;display: ;float: right;margin-bottom: -20vh;"onclick="change(1)">
+			<section class="song_name"> Timless</section>
+			 
+			<a href="login page.html"><section class="artist_name">HXGO</section></a>
+			<audio controls style="height: 0%;" class="a_dio"><source src="mp3/timeless.mp3" type="audio/mp3"></audio>
+		<section class="bottom_line"></section>
+		</div>
+		<div class="songsdiv">
+			<img src="songs/song3.jpg">
+			<img src="logos/play.png" class="logoplay" style=" height: 3vh;  width: 3vh;display: ;float: right;margin-bottom: -20vh;"onclick="change(2)">
+			<section class="song_name"> Tribe</section>
+			 
+			<a href="login page.html"><section class="artist_name">Dav The Ninja</section></a>
+			<audio controls style="height: 0%;" class="a_dio"><source src="mp3/tribe.mp3" type="audio/mp3"></audio>
+		<section class="bottom_line"></section>
+		</div>
+		<div class="songsdiv">
+			<img src="songs/song4.jpg">
+			<img src="logos/play.png" class="logoplay" style=" height: 3vh;width: 3vh;display: ;float: right;margin-bottom: -20vh;"onclick="change(3)">
+			<section class="song_name"> North Memphis</section>
+			 
+			<a href="login page.html"><section class="artist_name">Pharmacist</section></a>
+			<audio controls style="height: 0%;" class="a_dio"><source src="mp3/north.mp3" type="audio/mp3"></audio>
+		<section class="bottom_line"></section>
+		</div>
+		<div class="songsdiv">
+			<img src="songs/song5.jpg">
+			<img src="logos/play.png" class="logoplay" style=" height: 3vh;width: 3vh;display: ;float: right;margin-bottom: -20vh;"onclick="change(4)">
+			<section class="song_name"> Flute</section>
+			 
+			<a href="login page.html"><section class="artist_name">j^p^n</section></a>
+			<audio controls style="height: 0%;" class="a_dio"><source src="mp3/lute.mp3" type="audio/mp3"></audio>
+		<section class="bottom_line"></section>
+		</div>
+		<div class="songsdiv">
+			<img src="songs/song6.jpg">
+			<img src="logos/play.png" class="logoplay" style=" height: 3vh;width: 3vh;display: ;float: right;margin-bottom: -20vh;"onclick="change(5)">
+			<section class="song_name">Deathbed</section>
+			 
+			<a href="login page.html"><section class="artist_name">Powfu</section></a>
+			<audio controls style="height: 0%;" class="a_dio"><source src="mp3/thelongway.mp3" type="audio/mp3"></audio>
+		<section class="bottom_line"></section>
+		</div>
+		<div class="songsdiv">
+			<img src="songs/song7.jpg">
+			<img src="logos/play.png" class="logoplay" style=" height: 3vh;width: 3vh;display: ;float: right;margin-bottom: -20vh;"onclick="change(6)">
+			<section class="song_name"> the long way home</section>
+			 
+			<a href="login page.html"><section class="artist_name">Powfu</section></a>
+			<audio controls style="height: 0%;" class="a_dio"><source src="mp3/thelongway.mp3" type="audio/mp3"></audio>
+		<section class="bottom_line"></section>
+		</div>
+		<div class="songsdiv">
+			<img src="songs/song8.jpg">
+			<img src="logos/play.png" class="logoplay" style=" height: 3vh;width: 3vh;display: ;float: right;margin-bottom: -20vh;"onclick="change(7)">
+			<section class="song_name"> Ice Cold</section>
+			 
+			<a href="login page.html"><section class="artist_name">Letoa</section></a>
+			<audio controls style="height: 0%;" class="a_dio"><source src="mp3/icecold.mp3" type="audio/mp3"></audio>
+		<section class="bottom_line"></section>
+		</div>
+		<div class="songsdiv">
+			<img src="songs/song9.jpg">
+			<img src="logos/play.png" class="logoplay" style=" height: 3vh;width: 3vh;display: ;float: right;margin-bottom: -20vh;"onclick="change(8)">
+			<section class="song_name"> Shaolin Noon</section>
+			 
+			<a href="login page.html"><section class="artist_name">Yancey</section></a>
+			<audio controls style="height: 0%;" class="a_dio"><source src="mp3/shaolinnoon.mp3" type="audio/mp3"></audio>
+		<section class="bottom_line"></section>
+		</div>
+		<div class="songsdiv">
+			<img src="songs/song10.jpg">
+			<img src="logos/play.png" class="logoplay" style=" height: 3vh;width: 3vh;display: ;float: right;margin-bottom: -20vh;"onclick="change(9)">
+			<section class="song_name"> Brockley Greens</section>
+			 
+			<a href="login page.html"><section class="artist_name">Yancey</section></a>
+			<audio controls style="height: 0%;" class="a_dio"><source src="mp3/brockleygreens.mp3" type="audio/mp3"></audio>
+		<section class="bottom_line"></section>
+		</div>
+		</div>
+    </section>
+    <div style="height: 10vh;width:60%;margin: auto;"></div>
+    <div style="height: 60vh;width:60vw; margin-left: 20vw;"><img src="logos/app.png" style="height: 30vw; width: 60vw; margin-left:"></div>
+    <br>
+    <div id="bottom"><p style="text-align: center; font-size: 4vh">Thanks for listening. Now join in.</p><p style="text-align: center; font-size: 2vh;">
+Save tracks, follow artists and build playlists. All for free.<p><br>
+</div>
+   <script type="text/javascript">
+var c=0;
+var i=0;
+	function change(c,url){
+i++;
+
+var song = document.getElementsByClassName("a_dio")[c];
+		if(i%2!=0){
+    document.getElementsByClassName("logoplay")[c].src = "logos/pause.png";
+     document.getElementsByClassName("bottom_line")[c].style.animationPlayState= "running";
+     song.play();
+
+}else{
+	document.getElementsByClassName("logoplay")[c].src = "logos/play.png";
+	document.getElementsByClassName("bottom_line")[c].style.animationPlayState="paused"; 
+	song.pause();
+
+}
+}
+
+
+	</script>
+  </body>
+</html>
+
