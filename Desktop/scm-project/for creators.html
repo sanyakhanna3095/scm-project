@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+	<link rel="stylesheet" type="text/css" href="styles2.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+	<div id="detail" style="margin:auto; margin-top: 30vh;" style="height: 60vh;width: 30vw;">
+    <div style="height: 30vh;width: 10vw;float: left;"><img id="cd" style="height: 100px; margin: 5px;position: relative;"src="logos/logo14.png"></div>
+    <div style="height: 30vh;width: 20vw;float: right;flex-direction: column; margin-right: 5px;color: #fff">
+   <input type="input" style=" margin-top: 2vh;" name="" id="username" placeholder="Enter your username/email">
+    <input type="password" style="margin-top: 2vh;" name="" id="Password" placeholder="Enter your Password" >
+    <input type="input" style="margin-top: 2vh;"name="" id="Country" placeholder="Enter your Country/Region">
+    <input type="input" style="margin-top: 2vh;"name="" id="Country" placeholder="Enter your Mobile Number">
+    <input type="checkbox" name="" onclick="ab(1)">I am ready to give all my song rights to .wav
+    <button type="button" class="btn btn-success" onclick="check()" id="signup">Sign Up</button>
+    <button type="button" class="btn btn-dark" onclick="taketo()" style="float: left;font-size: 1vh;" id="signup">Pass without Signing In</button>
+  </div>
+   </div>
+<script type="text/javascript">
+	var ab=0;
+    	function check(){
+    	var i=0;
+var mail=document.getElementById('username').value;
+ if (/^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$/.test(mail))
+  { i++;
+  }else{
+    alert("You have entered an invalid email address!")
+}
+var pass=document.getElementById('Password').value;
+if(/.{8,}/.test(pass)){
+	i++;
+}
+else{
+    alert("You have entered an invalid password")
+   }
+if(i==2){
+	document.location.href = "mainhtml.html";
+	return true;
+}}
+function taketo(){
+  document.location.href = "newpage.html";
+}
+    </script>
+</body>
+</html>

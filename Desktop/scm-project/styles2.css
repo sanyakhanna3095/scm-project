@@ -1,0 +1,71 @@
+body{
+	background-image: url(page1bg/details2.jpg);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+#detail{
+    background-image: url(page1bg/Hasbg20.jpg);
+    box-shadow: 5px 10px 15px black;
+    border-radius: 25px;
+    height: 45vh;
+    width: 35vw;
+    
+}
+#username{float: left;
+    margin-top: 30px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 25px;
+    padding: 2vh;
+}
+#Password{float: left;
+	width: 100%;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 2vh;
+}
+#Country{float: left;
+	width: 100%;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 2vh
+}
+#signup{
+    float:right;
+    margin:2px;
+}
+ input:focus{
+     outline: none;
+}
+#cd{
+
+    animation: beeps 3s linear infinite ;
+}
+
+@keyframes beeps{
+   0% {
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100% {
+    transform: rotate(360deg);}
+}
+#cd:hover{
+    animation-play-state: paused;
+}
+@media(max-width: 679px){
+body img{
+    height: 50px;
+}
+}
